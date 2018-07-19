@@ -17,8 +17,11 @@ Use script to deploy the docker stack :
 It first builds the image of inventory-api service. 
 
 ### Access
-* Swagger explorer : http://<swarm-ip>:3000/explorer
-* mongo-express : http://<swarm-ip>:8081
+* Swagger explorer : http://swarm-ip:3000/explorer
+* mongo-express : http://swarm-ip:8081
+
+![Image of api](images/api.png)
+![Image of mongo-express](images/mongo-express.png)
 
 ### Remove
 Use command line to remove the stack :
