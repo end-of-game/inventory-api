@@ -7,9 +7,9 @@ https://medium.freecodecamp.org/build-restful-api-with-authentication-under-5-mi
 ## Objective
 Application to store resources, tags and relations between both.
 
-Backend is a NodeJS RESTful API server and objects are stored in a MongoDB storage. 
+Backend is a NodeJS RESTful API server and objects are stored in a MongoDB storage.
 
-The whole application is packaged in a docker stack for easy deployment. 
+The whole application is packaged in a docker stack for easy deployment.
 
 ## Usage
 ### Deploy
@@ -17,7 +17,7 @@ Use script to deploy the docker stack :
 ```
 ./deploy.sh
 ```
-It first builds the image of inventory-api service. 
+It first builds the image of inventory-api service.
 
 ### Access
 * Swagger explorer : http://swarm-ip:3000/explorer
@@ -26,9 +26,15 @@ It first builds the image of inventory-api service.
 ![Image of api](images/api.png)
 ![Image of mongo-express](images/mongo-express.png)
 
+### Generate Ansible inventory
+Use the script to generate ansible inventory from your resources and tags :
+```
+./ansible_inventory.sh
+```
+![Image of inventory](images/ansible_inventory.png)
+
 ### Remove
 Use command line to remove the stack :
 ```
 docker stack rm inventory
 ```
-
