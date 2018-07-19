@@ -20,7 +20,8 @@
     "tags": {
       "type": "hasAndBelongsToMany",
       "model": "tags",
-      "throughTable": "ResourceTags"
+      "foreignKey": "tagId",
+      "throughTable": "resourcesTags"
     }
   },
   "acls": [],

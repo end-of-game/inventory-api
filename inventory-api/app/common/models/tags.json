@@ -12,7 +12,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "resources": {
+      "type": "hasAndBelongsToMany",
+      "model": "resource",
+      "foreignKey": "resourceId",
+      "throughTable": "resourcesTags"
+    }
+  },
   "acls": [],
   "methods": {}
 }
