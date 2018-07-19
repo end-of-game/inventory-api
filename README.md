@@ -7,7 +7,7 @@ https://medium.freecodecamp.org/build-restful-api-with-authentication-under-5-mi
 ## Objective
 Application to store resources, tags and relations between both.
 
-Backend is a NodeJS RestFull API server and objects are stored in a MongoDB storage. 
+Backend is a NodeJS RESTful API server and objects are stored in a MongoDB storage. 
 
 The whole application is packaged in a docker stack for easy deployment. 
 
