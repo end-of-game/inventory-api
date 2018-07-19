@@ -1,0 +1,21 @@
+version: "3.3"
+
+volumes:
+  mongo:
+    external: true
+
+services:
+  api:
+    image: tperelle/inventory-api
+    ports:
+      - "3000:3000"
+
+  mongo:
+    image: mongo
+    volumes:
+      - mongo:/data/db
+
+  mongo-express:
+    image: mongo-express
+    ports:
+      - "8081:8081"
