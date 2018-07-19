@@ -3,8 +3,6 @@ FROM node:9.11.2-alpine
 # Create app directory
 WORKDIR /usr/src/app
 
-COPY wait-for-it.sh ./
-
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
